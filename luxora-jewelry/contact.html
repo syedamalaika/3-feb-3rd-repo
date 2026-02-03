@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Our Boutique | Luxora Fine Jewelry</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 100px;
+            margin-top: 150px;
+            padding-bottom: 100px;
+        }
+
+        .info-item {
+            margin-bottom: 40px;
+        }
+
+        .info-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+        }
+
+        .info-item p {
+            color: #888;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            background: #111;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            color: var(--cream);
+            margin-bottom: 20px;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--gold);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="scrolled">
+        <a href="index.html" class="logo">Luxora</a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="shop.html" class="nav-link">Collections</a>
+            <a href="#" class="nav-link">Bespoke</a>
+            <a href="#" class="nav-link">Our Story</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <a href="cart.html" style="position: relative;">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count"
+                    style="position: absolute; top: -10px; right: -10px; background: var(--gold); color: var(--onyx); font-size: 10px; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container contact-container">
+        <div>
+            <span class="gold-text"
+                style="letter-spacing: 4px; text-transform: uppercase; font-size: 12px; display: block; margin-bottom: 20px;">Private
+                Consultation</span>
+            <h1 style="font-size: 56px; margin-bottom: 40px;">Let's Create Something <span
+                    class="gold-text">Exquisite</span></h1>
+
+            <div class="info-item">
+                <h4>Main Boutique</h4>
+                <p>742 Luxury Avenue, Manhattan<br>New York, NY 10012</p>
+            </div>
+
+            <div class="info-item">
+                <h4>Inquiries</h4>
+                <p>Private Viewings: private@luxora.com<br>Client Support: boutique@luxora.com<br>+1 (212) 555-0198</p>
+            </div>
+
+            <div class="info-item">
+                <h4>Hours</h4>
+                <p>Monday - Saturday: 10am - 7pm<br>Sunday: By Appointment Only</p>
+            </div>
+        </div>
+
+        <div style="background: #111; padding: 60px; border: 1px solid var(--border-color);">
+            <form class="contact-form">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Subject (e.g. Bespoke Inquiry)">
+                <textarea placeholder="Tell us about the piece you're looking for..." style="height: 150px;"></textarea>
+                <button type="submit" class="btn btn-gold" style="width: 100%;">Send Inquiry</button>
+            </form>
+            <p style="text-align: center; color: #555; font-size: 12px; margin-top: 30px;">Our consultants will reach
+                out to you within 24 hours.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 30px;">Luxora</div>
+                <p style="color: #888; font-size: 14px; margin-bottom: 30px;">Elegance is not about being noticed, it's
+                    about being remembered. Discover the world of Luxora Fine Jewelry.</p>
+                <div class="nav-actions" style="justify-content: flex-start; gap: 20px;">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Sizing Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>The Boutique</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Ethics & Sustainability</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: #888; font-size: 14px; margin-bottom: 20px;">Subscribe to receive updates, access to
+                    exclusive deals, and more.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your Email Address">
+                    <button class="btn btn-gold" style="width: 100%; padding: 12px;">Join The Circle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Luxora Fine Jewelry. All Rights Reserved. Crafted with Passion.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

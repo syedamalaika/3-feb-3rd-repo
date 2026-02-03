@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora | Premium Fine Jewelry</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="logo">Luxora</div>
+
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="shop.html" class="nav-link">Collections</a>
+            <a href="#" class="nav-link">Bespoke</a>
+            <a href="#" class="nav-link">Our Story</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <a href="cart.html" style="position: relative;">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count"
+                    style="position: absolute; top: -10px; right: -10px; background: var(--gold); color: var(--onyx); font-size: 10px; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span>The Eternal Collection</span>
+            <h1>Elegance In Every<br><span class="gold-text">Detail</span></h1>
+            <p>Discover our curated collection of masterfully crafted jewelry, designed to celebrate life's most
+                precious moments.</p>
+            <div style="margin-top: 40px;">
+                <a href="shop.html" class="btn btn-gold">Discover Collection</a>
+                <a href="#" class="btn btn-outline" style="margin-left: 20px;">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="container">
+        <div class="section-title">
+            <span>Shop By Category</span>
+            <h2>Pure Excellence</h2>
+        </div>
+
+        <div class="product-grid">
+            <!-- Category 1 -->
+            <a href="shop.html?cat=rings" class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070&auto=format&fit=crop"
+                        alt="Rings">
+                    <div class="product-overlay">View Rings</div>
+                </div>
+                <h3>Artisanal Rings</h3>
+            </a>
+
+            <!-- Category 2 -->
+            <a href="shop.html?cat=necklaces" class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=1974&auto=format&fit=crop"
+                        alt="Necklaces">
+                    <div class="product-overlay">View Necklaces</div>
+                </div>
+                <h3>Statement Necklaces</h3>
+            </a>
+
+            <!-- Category 3 -->
+            <a href="shop.html?cat=earrings" class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?q=80&w=1968&auto=format&fit=crop"
+                        alt="Earrings">
+                    <div class="product-overlay">View Earrings</div>
+                </div>
+                <h3>Timeless Earrings</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section style="background: #111;">
+        <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+            <div style="position: relative;">
+                <img src="https://images.unsplash.com/photo-1531995811006-35cb42e1a021?q=80&w=2070&auto=format&fit=crop"
+                    style="width: 100%; border-radius: 4px;">
+                <div
+                    style="position: absolute; bottom: -30px; right: -30px; background: var(--gold); padding: 40px; color: var(--onyx);">
+                    <h4 style="font-size: 24px; margin-bottom: 10px;">25+ Years</h4>
+                    <p style="font-weight: 600; font-size: 14px; text-transform: uppercase;">Of Mastery</p>
+                </div>
+            </div>
+            <div>
+                <span class="gold-text"
+                    style="letter-spacing: 4px; text-transform: uppercase; font-size: 12px; display: block; margin-bottom: 20px;">The
+                    Luxora Standard</span>
+                <h2 style="font-size: 48px; margin-bottom: 30px;">Meticulous Hand-Crafted Artistry</h2>
+                <p style="color: #888; margin-bottom: 40px;">Every piece in our collection is a testament to the skill
+                    and dedication of our master jewelers. From the selection of the finest responsibly sourced
+                    gemstones to the final polish, we ensure perfection in every silhouette.</p>
+                <ul style="display: flex; flex-direction: column; gap: 20px; font-weight: 500;">
+                    <li><i class="fa-solid fa-check gold-text" style="margin-right: 15px;"></i> Ethically Sourced
+                        Diamonds</li>
+                    <li><i class="fa-solid fa-check gold-text" style="margin-right: 15px;"></i> 18k Solid Gold Finish
+                    </li>
+                    <li><i class="fa-solid fa-check gold-text" style="margin-right: 15px;"></i> Lifetime Warranty</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Gallery -->
+    <div class="instagram-grid">
+        <div class="insta-item"><img
+                src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=1974&auto=format&fit=crop">
+        </div>
+        <div class="insta-item"><img
+                src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=2070&auto=format&fit=crop">
+        </div>
+        <div class="insta-item"><img
+                src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?q=80&w=1974&auto=format&fit=crop">
+        </div>
+        <div class="insta-item"><img
+                src="https://images.unsplash.com/photo-1626784215021-2e39cc69403d?q=80&w=2070&auto=format&fit=crop">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 30px;">Luxora</div>
+                <p style="color: #888; font-size: 14px; margin-bottom: 30px;">Elegance is not about being noticed, it's
+                    about being remembered. Discover the world of Luxora Fine Jewelry.</p>
+                <div class="nav-actions" style="justify-content: flex-start; gap: 20px;">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Sizing Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>The Boutique</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Ethics & Sustainability</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: #888; font-size: 14px; margin-bottom: 20px;">Subscribe to receive updates, access to
+                    exclusive deals, and more.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your Email Address">
+                    <button class="btn btn-gold" style="width: 100%; padding: 12px;">Join The Circle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Luxora Fine Jewelry. All Rights Reserved. Crafted with Passion.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

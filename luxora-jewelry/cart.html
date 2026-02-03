@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Collection | Luxora Fine Jewelry</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 60px;
+        }
+
+        .cart-table th {
+            text-align: left;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #888;
+        }
+
+        .cart-table td {
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .cart-item-info {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .cart-item-img {
+            width: 100px;
+            height: 100px;
+            background: #252525;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cart-item-img img {
+            width: 70%;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--border-color);
+            width: fit-content;
+        }
+
+        .quantity-control button {
+            padding: 10px 15px;
+            background: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .quantity-control span {
+            padding: 0 15px;
+            font-size: 14px;
+        }
+
+        .cart-summary {
+            background: #111;
+            padding: 40px;
+            margin-top: 60px;
+            border: 1px solid var(--border-color);
+            max-width: 400px;
+            margin-left: auto;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .summary-total {
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            margin-top: 20px;
+            font-size: 20px;
+            font-family: var(--font-heading);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="scrolled">
+        <a href="index.html" class="logo">Luxora</a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="shop.html" class="nav-link">Collections</a>
+            <a href="#" class="nav-link">Bespoke</a>
+            <a href="#" class="nav-link">Our Story</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <a href="cart.html" style="position: relative;">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count"
+                    style="position: absolute; top: -10px; right: -10px; background: var(--gold); color: var(--onyx); font-size: 10px; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">1</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 150px; padding-bottom: 100px;">
+        <h1 style="font-size: 48px; border-bottom: 1px solid var(--border-color); padding-bottom: 30px;">Your Collection
+        </h1>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cart-item-info">
+                            <div class="cart-item-img">
+                                <img
+                                    src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070&auto=format&fit=crop">
+                            </div>
+                            <div>
+                                <h4 style="font-size: 18px; margin-bottom: 5px;">Eternal Gold Band</h4>
+                                <p style="font-size: 12px; color: #888; text-transform: uppercase;">Size: 6 | 18k Gold
+                                </p>
+                                <button
+                                    style="background: transparent; color: var(--gold); border: none; font-size: 10px; text-transform: uppercase; margin-top: 10px; cursor: pointer; letter-spacing: 1px;">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$850.00</td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td class="gold-text" style="font-weight: 600;">$850.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h3 style="margin-bottom: 30px; font-size: 24px;">Order Summary</h3>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$850.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span
+                    style="color: var(--success); text-transform: uppercase; font-size: 10px; font-weight: 700;">Complimentary</span>
+            </div>
+            <div class="summary-row">
+                <span>Estimated Tax</span>
+                <span>$0.00</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span class="gold-text">$850.00</span>
+            </div>
+            <button class="btn btn-gold" style="width: 100%; margin-top: 40px;">Proceed To Boutique Checkout</button>
+            <p
+                style="text-align: center; font-size: 10px; color: #555; margin-top: 20px; text-transform: uppercase; letter-spacing: 1px;">
+                Secure Checkout Powered by Luxora</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 30px;">Luxora</div>
+                <p style="color: #888; font-size: 14px; margin-bottom: 30px;">Elegance is not about being noticed, it's
+                    about being remembered. Discover the world of Luxora Fine Jewelry.</p>
+                <div class="nav-actions" style="justify-content: flex-start; gap: 20px;">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Sizing Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>The Boutique</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Ethics & Sustainability</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: #888; font-size: 14px; margin-bottom: 20px;">Subscribe to receive updates, access to
+                    exclusive deals, and more.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your Email Address">
+                    <button class="btn btn-gold" style="width: 100%; padding: 12px;">Join The Circle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Luxora Fine Jewelry. All Rights Reserved. Crafted with Passion.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

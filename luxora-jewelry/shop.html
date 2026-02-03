@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | Luxora Fine Jewelry</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .filter-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 60px;
+        }
+
+        .filter-groups {
+            display: flex;
+            gap: 30px;
+        }
+
+        .filter-select {
+            background: transparent;
+            color: var(--cream);
+            border: none;
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .filter-select option {
+            background: var(--onyx);
+            color: var(--cream);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="scrolled">
+        <a href="index.html" class="logo">Luxora</a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="shop.html" class="nav-link active">Collections</a>
+            <a href="#" class="nav-link">Bespoke</a>
+            <a href="#" class="nav-link">Our Story</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <a href="cart.html" style="position: relative;">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count"
+                    style="position: absolute; top: -10px; right: -10px; background: var(--gold); color: var(--onyx); font-size: 10px; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div style="margin-top: 100px;"></div>
+
+    <!-- Page Header -->
+    <section class="container" style="padding: 60px 0 20px;">
+        <h1 style="font-size: 56px; margin-bottom: 20px;">The Collections</h1>
+        <p style="color: #888; max-width: 600px;">Explore our world of high-craft jewelry. Each piece tells a story of
+            brilliance, meticulously designed for the discerning individual.</p>
+    </section>
+
+    <!-- Filters & Grid -->
+    <section class="container" style="padding-top: 0;">
+        <div class="filter-section">
+            <div class="filter-groups">
+                <select class="filter-select">
+                    <option>All Categories</option>
+                    <option>Rings</option>
+                    <option>Necklaces</option>
+                    <option>Earrings</option>
+                    <option>Bracelets</option>
+                </select>
+                <select class="filter-select">
+                    <option>All Materials</option>
+                    <option>18k Gold</option>
+                    <option>Platinum</option>
+                    <option>Rose Gold</option>
+                    <option>Diamonds</option>
+                </select>
+                <select class="filter-select">
+                    <option>Price Range</option>
+                    <option>$500 - $1,000</option>
+                    <option>$1,000 - $5,000</option>
+                    <option>$5,000+</option>
+                </select>
+            </div>
+            <div style="font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #888;">
+                Showing 12 Products
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <a href="product-details.html">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070&auto=format&fit=crop"
+                            alt="Eternal Gold Ring">
+                        <div class="product-overlay">Quick View</div>
+                    </div>
+                </a>
+                <h3>Eternal Gold Band</h3>
+                <p class="product-price">$850.00</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <a href="product-details.html">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=1974&auto=format&fit=crop"
+                            alt="Diamond Drop Necklace">
+                        <div class="product-overlay">Quick View</div>
+                    </div>
+                </a>
+                <h3>Diamond Solitaire Drop</h3>
+                <p class="product-price">$2,400.00</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <a href="product-details.html">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?q=80&w=1968&auto=format&fit=crop"
+                            alt="Pearl Studs">
+                        <div class="product-overlay">Quick View</div>
+                    </div>
+                </a>
+                <h3>Akoya Pearl Studs</h3>
+                <p class="product-price">$1,200.00</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <a href="product-details.html">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1974&auto=format&fit=crop"
+                            alt="Diamond Bracelet">
+                        <div class="product-overlay">Quick View</div>
+                    </div>
+                </a>
+                <h3>Celestial Link Bracelet</h3>
+                <p class="product-price">$3,150.00</p>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <a href="product-details.html">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=1970&auto=format&fit=crop"
+                            alt="Aura Ring">
+                        <div class="product-overlay">Quick View</div>
+                    </div>
+                </a>
+                <h3>Aura Sapphire Ring</h3>
+                <p class="product-price">$4,800.00</p>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <a href="product-details.html">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1596944214946-10e825a9793a?q=80&w=1976&auto=format&fit=crop"
+                            alt="Luna Earrings">
+                        <div class="product-overlay">Quick View</div>
+                    </div>
+                </a>
+                <h3>Luna Crescent Hoops</h3>
+                <p class="product-price">$950.00</p>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 80px;">
+            <a href="#" class="gold-text" style="font-weight: 700;">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 30px;">Luxora</div>
+                <p style="color: #888; font-size: 14px; margin-bottom: 30px;">Elegance is not about being noticed, it's
+                    about being remembered. Discover the world of Luxora Fine Jewelry.</p>
+                <div class="nav-actions" style="justify-content: flex-start; gap: 20px;">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Sizing Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>The Boutique</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Ethics & Sustainability</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: #888; font-size: 14px; margin-bottom: 20px;">Subscribe to receive updates, access to
+                    exclusive deals, and more.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your Email Address">
+                    <button class="btn btn-gold" style="width: 100%; padding: 12px;">Join The Circle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Luxora Fine Jewelry. All Rights Reserved. Crafted with Passion.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
